@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="traveliaModelStoreContainer" CdmEntityContainer="traveliaEntitiesContext">
+    <EntitySetMapping Name="travelplaces">
+      <EntityTypeMapping TypeName="traveliaModel.travelplace">
+        <MappingFragment StoreEntitySet="travelplace">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="travelplace1" ColumnName="travelplace" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="division" ColumnName="division" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="travelguidermail" ColumnName="travelguidermail" />
+          <ScalarProperty Name="pictures" ColumnName="pictures" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="traveliaModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="usermail" ColumnName="usermail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userinfoes">
+      <EntityTypeMapping TypeName="traveliaModel.userinfo">
+        <MappingFragment StoreEntitySet="userinfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="usermail" ColumnName="usermail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phoneno" ColumnName="phoneno" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
